@@ -1,0 +1,235 @@
+/**
+ * ESTILOS - TABLE A FINDINGS SLIDE
+ *
+ * Hallazgos de Mesa A con Mentimeter
+ */
+
+.table-a-findings-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  overflow-y: auto;
+  gap: 2rem;
+}
+
+.findings-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.findings-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+}
+
+.findings-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.findings-gradient {
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.section-heading svg {
+  color: #10b981;
+}
+
+/* WORD CLOUD */
+.wordcloud-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.wordcloud-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 150px;
+}
+
+.cloud-word {
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.cloud-word:hover {
+  transform: scale(1.1);
+}
+
+.cloud-word.large {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cloud-word.medium {
+  font-size: 1.8rem;
+  background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* DILEMMA RESULTS */
+.dilemma-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dilemma-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.dilemma-question {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.dilemma-bar-container {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.dilemma-bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  border-radius: 10px;
+  transition: width 1s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bar-percentage {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+}
+
+.dilemma-result {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* CONCLUSION */
+.findings-conclusion {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border: 2px solid rgba(16, 185, 129, 0.5);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+}
+
+.conclusion-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+}
+
+.conclusion-text {
+  font-size: 1.1rem;
+  color: #d1fae5;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.conclusion-text strong {
+  color: white;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .table-a-findings-slide {
+    padding: 2rem;
+  }
+
+  .findings-title {
+    font-size: 2.2rem;
+  }
+
+  .cloud-word.large {
+    font-size: 2rem;
+  }
+
+  .cloud-word.medium {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-a-findings-slide {
+    padding: 1.5rem;
+  }
+
+  .findings-title {
+    font-size: 1.8rem;
+  }
+
+  .findings-conclusion {
+    flex-direction: column;
+    text-align: center;
+  }
+}

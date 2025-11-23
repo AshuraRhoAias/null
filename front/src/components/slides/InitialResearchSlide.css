@@ -1,0 +1,414 @@
+/**
+ * ESTILOS - INITIAL RESEARCH SLIDE (SLIDE 5)
+ *
+ * Investigación inicial del sector ganadero mexicano
+ */
+
+.initial-research-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  overflow-y: auto;
+  gap: 2rem;
+}
+
+/* BACKGROUND */
+.research-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+}
+
+.shape-1 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, #f97316 0%, transparent 70%);
+  top: -12%;
+  right: -8%;
+}
+
+.shape-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #ec4899 0%, transparent 70%);
+  bottom: -10%;
+  left: -8%;
+}
+
+/* HEADER */
+.research-header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.research-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.4);
+}
+
+.research-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.title-gradient {
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.research-subtitle {
+  font-size: 1.3rem;
+  color: #93c5fd;
+  font-weight: 400;
+}
+
+/* CONTENT */
+.research-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  flex: 1;
+}
+
+.content-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.content-heading svg {
+  color: #10b981;
+}
+
+/* COMPARISON SECTION */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.comparison-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.comparison-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.comparison-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.comparison-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.3;
+}
+
+.comparison-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.indicator-bar {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.indicator-bar.cattle {
+  background: rgba(59, 130, 246, 0.3);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  color: #93c5fd;
+}
+
+.indicator-bar.pork {
+  background: rgba(249, 115, 22, 0.3);
+  border: 1px solid rgba(249, 115, 22, 0.5);
+  color: #fdba74;
+}
+
+.vs-arrow {
+  color: #6ee7b7;
+  flex-shrink: 0;
+}
+
+/* DISCOVERY SECTION */
+.discovery-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.discovery-box {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(249, 115, 22, 0.1) 100%);
+  border: 2px solid rgba(236, 72, 153, 0.5);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+}
+
+.discovery-icon-large {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 10px 25px rgba(236, 72, 153, 0.5);
+}
+
+.discovery-box h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.discovery-location {
+  font-size: 1.1rem;
+  color: #fca5a5;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.conflict-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.conflict-side {
+  padding: 0.6rem 1.25rem;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
+
+.conflict-side.industry {
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+}
+
+.conflict-side.communities {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+}
+
+.vs {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fbbf24;
+  padding: 0.25rem 0.75rem;
+}
+
+/* FINDINGS LIST */
+.findings-list {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.findings-list h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.finding-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.finding-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(5px);
+}
+
+.finding-bullet {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
+}
+
+/* DECISION BOX */
+.decision-box {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border: 2px solid rgba(16, 185, 129, 0.5);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+}
+
+.decision-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+}
+
+.decision-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.decision-content p {
+  font-size: 1.05rem;
+  color: #d1fae5;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.decision-content strong {
+  color: white;
+  font-weight: 700;
+}
+
+/* DECORATION */
+.research-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent 0%, #f97316 25%, #ec4899 50%, #10b981 75%, transparent 100%);
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .initial-research-slide {
+    padding: 2rem;
+  }
+
+  .research-title {
+    font-size: 2.2rem;
+  }
+
+  .research-content {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .initial-research-slide {
+    padding: 1.5rem;
+  }
+
+  .research-title {
+    font-size: 1.8rem;
+  }
+
+  .research-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .decision-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conflict-label {
+    flex-direction: column;
+  }
+}
