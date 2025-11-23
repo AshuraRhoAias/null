@@ -1,0 +1,255 @@
+/**
+ * ESTILOS - SYSTEMATIZATION SLIDE
+ */
+
+.systematization-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  overflow-y: auto;
+  gap: 2rem;
+}
+
+.sys-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sys-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+.sys-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.sys-gradient {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sys-subtitle {
+  font-size: 1.2rem;
+  color: #93c5fd;
+  font-weight: 400;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.data-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.data-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.data-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.data-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.data-card p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.testimony-box {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.1) 100%);
+  border: 2px solid rgba(239, 68, 68, 0.5);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.2);
+}
+
+.testimony-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimony-header svg {
+  color: #ef4444;
+}
+
+.testimony-header h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.testimony-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.testimony-item {
+  flex: 1;
+  min-width: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.testimony-label {
+  font-size: 0.9rem;
+  color: #fca5a5;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.testimony-value {
+  font-size: 1.1rem;
+  color: #fecaca;
+  line-height: 1.6;
+}
+
+.testimony-value strong {
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.analysis-box {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border: 2px solid rgba(16, 185, 129, 0.5);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+}
+
+.analysis-icon {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+}
+
+.analysis-content h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.analysis-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.analysis-content li {
+  font-size: 1.05rem;
+  color: #d1fae5;
+  line-height: 1.5;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.analysis-content li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #6ee7b7;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .systematization-slide {
+    padding: 2rem;
+  }
+
+  .sys-title {
+    font-size: 2.2rem;
+  }
+
+  .data-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimony-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .systematization-slide {
+    padding: 1.5rem;
+  }
+
+  .sys-title {
+    font-size: 1.8rem;
+  }
+
+  .analysis-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .analysis-icon {
+    margin: 0 auto;
+  }
+}
