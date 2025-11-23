@@ -940,7 +940,7 @@ const CrisisSlide = ({ title, problem, action, company, meeting, showed, interes
       <div className="step">→ {showed}</div>
       <div className="step">✓ {interest}</div>
     </div>
-    <div className="confession">💬 "{confession}"</div>
+    <div className="confession">💬 {confession}</div>
     <div className="critical">⚡ {critical}</div>
     <div className="outcome">→ {outcome}</div>
     {image && <div className="image-placeholder">[Image: {image}]</div>}
